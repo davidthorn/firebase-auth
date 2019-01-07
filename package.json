@@ -1,0 +1,49 @@
+{
+  "name": "firebase-auth",
+  "version": "1.0.0",
+  "description": "A library which authenticates the credentials using firebase rest api.",
+  "main": "src/main.ts",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "nyc mocha",
+    "watch": "mocha-typescript-watch",
+    "prepare": "tsc",
+    "serve:mock" : "node test/mockServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidthorn/firebase-auth.git"
+  },
+  "author": "David Thorn <david.thorn221278@googlemail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidthorn/firebase-auth/issues"
+  },
+  "homepage": "https://github.com/davidthorn/firebase-auth#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "@types/node-fetch": "^2.1.4",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha-typescript": "^1.1.17",
+    "node-fetch": "^2.3.0",
+    "nyc": "^13.1.0",
+    "source-map-support": "^0.5.9",
+    "typescript": "^3.2.2"
+  },
+  "firebase": {
+    "mode": "dev",
+    "dev": {
+      "url": "localhost",
+      "port" : 3002
+    },
+    "prod": {
+      "url": "https://www.googleapis.com"
+    }
+  }
+}
