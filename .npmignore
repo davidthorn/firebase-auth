@@ -1,0 +1,12 @@
+node_modules
+main.*
+tsconfig.json
+.vscode
+test
+.gitignore
+*.ts
+*.log
+coverage
+.nyc_output
+package-lock.json
+src

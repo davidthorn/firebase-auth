@@ -2,7 +2,7 @@
   "name": "firebase-auth",
   "version": "1.0.0",
   "description": "A library which authenticates the credentials using firebase rest api.",
-  "main": "src/main.ts",
+  "main": "src/index.ts",
   "scripts": {
     "pretest": "tsc",
     "test": "nyc mocha",
@@ -36,6 +36,9 @@
     "source-map-support": "^0.5.9",
     "typescript": "^3.2.2"
   },
+  "files": [
+    "src/"
+  ],
   "firebase": {
     "mode": "dev",
     "dev": {
