@@ -8,7 +8,8 @@
     "test": "nyc mocha",
     "watch": "mocha-typescript-watch",
     "prepare": "tsc",
-    "serve:mock": "node test/mockServer.js"
+    "serve:mock": "node test/mockServer.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -37,10 +38,14 @@
     "node-fetch": "^2.3.0",
     "nyc": "^13.1.0",
     "source-map-support": "^0.5.9",
-    "typescript": "^3.2.2"
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1"
   },
   "files": [
-    "src/"
+    "src/",
+    "./package.json"
   ],
   "firebase": {
     "mode": "prod",
