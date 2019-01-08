@@ -1,6 +1,6 @@
 {
-  "name": "firebase-auth",
-  "version": "0.1.0",
+  "name": "djt-firebase-auth",
+  "version": "0.2.0",
   "description": "A library which authenticates the credentials using firebase rest api.",
   "main": "src/index.ts",
   "scripts": {
@@ -20,7 +20,10 @@
     "url": "https://github.com/davidthorn/firebase-auth/issues"
   },
   "homepage": "https://github.com/davidthorn/firebase-auth#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^8.4.0"
+  },
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/express": "^4.16.0",
@@ -40,7 +43,7 @@
     "src/"
   ],
   "firebase": {
-    "mode": "dev",
+    "mode": "prod",
     "dev": {
       "url": "localhost",
       "port": 3002
