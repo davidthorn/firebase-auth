@@ -1,8 +1,8 @@
 {
   "name": "djt-firebase-auth",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A library which authenticates the credentials using firebase rest api.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "pretest": "tsc",
     "test": "nyc mocha",
@@ -44,7 +44,7 @@
     "webpack-cli": "^3.2.1"
   },
   "files": [
-    "src/",
+    "dist/",
     "./package.json"
   ],
   "firebase": {

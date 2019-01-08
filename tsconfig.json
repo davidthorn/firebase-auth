@@ -14,7 +14,7 @@
     "sourceMap": true,  
     "resolveJsonModule" : true,
     /* Generates corresponding '.map' file. */
-    "outFile": "./dist/firebase-auth.js",                       /* Concatenate and emit output to single file. */
+    "outFile": "./dist/index.js",                       /* Concatenate and emit output to single file. */
     "outDir": "./dist",                        /* Redirect output structure to the directory. */
     //"composite": true,                     /* Enable project compilation */
     // "removeComments": true,                /* Do not emit comments to output. */
