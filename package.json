@@ -1,6 +1,6 @@
 {
   "name": "firebase-auth",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A library which authenticates the credentials using firebase rest api.",
   "main": "src/index.ts",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "nyc mocha",
     "watch": "mocha-typescript-watch",
     "prepare": "tsc",
-    "serve:mock" : "node test/mockServer.js"
+    "serve:mock": "node test/mockServer.js"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "mode": "dev",
     "dev": {
       "url": "localhost",
-      "port" : 3002
+      "port": 3002
     },
     "prod": {
       "url": "https://www.googleapis.com"
