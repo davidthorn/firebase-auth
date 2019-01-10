@@ -58,7 +58,7 @@ const retrievePublicKeyData = async (): Promise<{ [id:string] : string }> => {
     return await fetch(googlesecuretokenVerificationUrl, {
         method: 'GET'
     })
-    .then(i => { return i.json() })
+    .then((i:any) => { return i.json() })
 }
 
 /**

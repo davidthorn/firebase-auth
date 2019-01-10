@@ -6,7 +6,7 @@ import { firebase } from '../package.json'
 
 const path = '/identitytoolkit/v3/relyingparty/'
 
-const firebaseAuthLoginEmailPassword = async (params: AuthEmailLoginParams) => {
+const firebaseSignupEmailPassword = async (params: AuthEmailLoginParams) => {
 
     let host: string = ''
     let port: string = ''
@@ -23,7 +23,7 @@ const firebaseAuthLoginEmailPassword = async (params: AuthEmailLoginParams) => {
 
     const { email , password } = params.credentials
 
-    return await fetch(`${host}${path}verifyPassword?key=${params.API_KEY}` , {
+    return await fetch(`${host}${path}signupNewUser?key=${params.API_KEY}` , {
         method: 'POST',
         body: JSON.stringify({ 
             email: email ,  
@@ -46,5 +46,5 @@ const firebaseAuthLoginEmailPassword = async (params: AuthEmailLoginParams) => {
     })
 }
 
-export default firebaseAuthLoginEmailPassword
+export default firebaseSignupEmailPassword
 
